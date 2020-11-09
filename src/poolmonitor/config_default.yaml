@@ -1,12 +1,12 @@
 web3:
-  url: None
-  pkey: None
+  url: "https://mainnet.infura.io/v3/89c8bdd081fe4afa92b257fd9f88863a"
+  pkey: "0xf77eb5c55e79be9a216f20269fe0743c7a2b5ddc12db1563ce231a9b8492024e"
 
 pools:
-  - address: '0x29bA3D899E8a819Cf920adAfF53ef1CF31969E66'
+  - address: "0x29bA3D899E8a819Cf920adAfF53ef1CF31969E66"
     start_height: 10940335
     type: uniswap
-  - address: '0x4C34a687906092ec11CC04DDF30b71e29747Ed76'
+  - address: "0x4C34a687906092ec11CC04DDF30b71e29747Ed76"
     start_height: 10969116
     type: balancer
 
@@ -15,9 +15,9 @@ reward_per_block: 2.5
 batch_size: 200
 
 token:
-  address: '0x27702a26126e0B3702af63Ee09aC4d1A084EF628'
+  address: "0x27702a26126e0B3702af63Ee09aC4d1A084EF628"
   symbol: ALEPH
 
 aleph:
-  channel: 'TEST'
-  api_server: 'https://api2.aleph.im'
+  channel: "TEST"
+  api_server: "https://api2.aleph.im"
