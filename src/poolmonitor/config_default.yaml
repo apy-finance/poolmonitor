@@ -6,8 +6,8 @@ pools:
   # - address: "0x29bA3D899E8a819Cf920adAfF53ef1CF31969E66"
   #   start_height: 10940335
   #   type: uniswap
-  - address: "0x4C34a687906092ec11CC04DDF30b71e29747Ed76"
-    start_height: 10969116
+  - address: "0xbc8b1f78ff5a0baf9945e145832ad79c494d4cf6"
+    start_height: 11212171
     type: balancer
 
 reward_start: 10940337
@@ -15,8 +15,8 @@ reward_per_block: 2.5
 batch_size: 200
 
 token:
-  address: "0x27702a26126e0B3702af63Ee09aC4d1A084EF628"
-  symbol: ALEPH
+  address: "0x95a4492f028aa1fd432ea71146b433e7b4446611"
+  symbol: APY
 
 aleph:
   channel: "TEST"
