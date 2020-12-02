@@ -15,4 +15,4 @@ COPY . .
 RUN pip install .
 RUN pip install git+https://github.com/aleph-im/aleph-client.git@1016413ad8ba006e6b6afa8306aee64f8a2dec4e
 
-CMD python -m poolmonitor.commands
+CMD python -m poolmonitor.commands --end-height 11252483
