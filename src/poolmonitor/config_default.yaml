@@ -5,7 +5,7 @@ web3:
 pools:
   - address: "0xF043c39A106db6B58C76995F30Ba35fD211c3b76"
     # creation: https://etherscan.io/tx/0x73e288bb2c047f0cd1c4bf9c22233c90c34f9f6401ad694e85688a9f37c152fb
-    start_height: 11204830
+    start_height: 11204829 # one block before creation to pick up creator address
     type: uniswap
   # - address: "0xbC8B1f78ff5a0baF9945E145832ad79C494d4CF6"
   #   start_height: 11212171
