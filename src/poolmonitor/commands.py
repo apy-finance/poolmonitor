@@ -117,8 +117,8 @@ def main(args):
 
     from . import uniswap, balancer
     from .ethereum import get_web3, transfer_tokens
-    # uniswap.set_pools()
-    balancer.set_pools()
+    uniswap.set_pools()
+    # balancer.set_pools()
 
     pool_weights = {
         pool['address'] : pool['weight_processor'](pool) for pool in config['pools']

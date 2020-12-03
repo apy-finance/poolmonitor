@@ -16,6 +16,6 @@ RUN pip install .
 RUN pip install git+https://github.com/aleph-im/aleph-client.git@1016413ad8ba006e6b6afa8306aee64f8a2dec4e
 
 # end block is the start of week 2 rewards distribution:
-# https://etherscan.io/tx/0x6f1bd88a392d209f34c72749a1692dfd9e001f38d36cc060ae3f6d8335905700
-# Nov-21-2020 06:07:07 PM +UTC
-CMD python -m poolmonitor.commands --end-height 11302989
+# https://etherscan.io/tx/0xff47c063e80d51f20db39cebf1b03eb7655d6558f57f7fd0dd6aeaa11875320c
+# Nov-21-2020 06:07:29 PM +UTC
+CMD python -m poolmonitor.commands --end-height 11302991
