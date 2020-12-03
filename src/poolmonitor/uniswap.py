@@ -44,6 +44,9 @@ def process_pool_history(pool, per_block, start_height, end_height):
 
     def update_weights(since, current):
         for addr, value in balances.items():
+            # skip LBP deployer address
+            if addr == '0xC98A0A4d9D9F789b86f03AbfdcEaEE7e3538e3dF':
+                continue
             if value > 0:
                 weights[addr] = weights.get(addr, 0) + (value * (current-since))
 
