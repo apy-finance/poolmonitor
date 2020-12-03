@@ -3,15 +3,18 @@ web3:
   pkey: "0xf77eb5c55e79be9a216f20269fe0743c7a2b5ddc12db1563ce231a9b8492024e"
 
 pools:
-  # - address: "0x29bA3D899E8a819Cf920adAfF53ef1CF31969E66"
-  #   start_height: 10940335
-  #   type: uniswap
-  - address: "0xbc8b1f78ff5a0baf9945e145832ad79c494d4cf6"
-    start_height: 11212171
-    type: balancer
+  - address: "0xF043c39A106db6B58C76995F30Ba35fD211c3b76"
+    # creation: https://etherscan.io/tx/0x73e288bb2c047f0cd1c4bf9c22233c90c34f9f6401ad694e85688a9f37c152fb
+    start_height: 11204830
+    type: uniswap
+  # - address: "0xbC8B1f78ff5a0baF9945E145832ad79C494d4CF6"
+  #   start_height: 11212171
+  #   type: balancer
 
-reward_start: 10940337
-reward_per_block: 2.5
+# official liquidity start:
+# https://etherscan.io/tx/0xb2aed5130a94801e23560bf2c79e87e1123e76ef1aaee04961ae41040b2d756b
+reward_start: 11224977
+reward_per_block: 0.78125
 batch_size: 200
 
 token:
