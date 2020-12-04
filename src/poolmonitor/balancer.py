@@ -57,8 +57,12 @@ def process_pool_history(pool, per_block, start_height, end_height):
         if height > reward_start:
             update_weights(last_height, height)
 
-        balances[args['src']] = balances.get(args['src'], 0) - args.amt
-        balances[args.dst] = balances.get(args.dst, 0) + args.amt
+        # to handle gaps in our staking contract's reward distribution,
+        # a user's balance accumulates whenever they stake to the contract
+        if args['src'] == '0xFe82ea0Ef14DfdAcd5dB1D49F563497A1a751bA1':
+            balances[args.dst] = balances.get(args.dst, 0) - args.amt
+        elif args.dst == '0xFe82ea0Ef14DfdAcd5dB1D49F563497A1a751bA1':
+            balances[args['src']] = balances.get(args['src'], 0) + args.amt
         last_height = height
     
     height = end_height

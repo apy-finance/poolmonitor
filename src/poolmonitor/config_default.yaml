@@ -3,21 +3,21 @@ web3:
   pkey: "0xf77eb5c55e79be9a216f20269fe0743c7a2b5ddc12db1563ce231a9b8492024e"
 
 pools:
-  - address: "0xF043c39A106db6B58C76995F30Ba35fD211c3b76"
-    # creation: https://etherscan.io/tx/0x73e288bb2c047f0cd1c4bf9c22233c90c34f9f6401ad694e85688a9f37c152fb
-    start_height: 11204829 # one block before creation to pick up creator address
-    type: uniswap
-  # - address: "0xbC8B1f78ff5a0baF9945E145832ad79C494d4CF6"
-  #   # creation: https://etherscan.io/tx/0xca24cde90808c490c0be6e2f53b870ca2f1f69949c316a1a6c83d59016d5ec66
-  #   start_height: 11212171
-  #   type: balancer
+  # - address: "0xF043c39A106db6B58C76995F30Ba35fD211c3b76"
+  #   # creation: https://etherscan.io/tx/0x73e288bb2c047f0cd1c4bf9c22233c90c34f9f6401ad694e85688a9f37c152fb
+  #   start_height: 11204829 # one block before creation to pick up creator address
+  #   type: uniswap
+  - address: "0xbC8B1f78ff5a0baF9945E145832ad79C494d4CF6"
+    # creation: https://etherscan.io/tx/0xca24cde90808c490c0be6e2f53b870ca2f1f69949c316a1a6c83d59016d5ec66
+    start_height: 11212171
+    type: balancer
 
 # start 7 days after week 1 reward distribution begins
 # (week 2 was delayed by ~17 hours)
 # week 1 reward:
-# - https://etherscan.io/tx/0x67f9ac3e11d517a379f57c023ccc514d6490a7aca93d011bf838965c235ea36b
-# - Nov-14-2020 12:45:06 AM +UTC
-reward_start: 11298280 # Nov-21-2020 12:45:00 AM +UTC
+# - https://etherscan.io/tx/0xcbe5f43c3574bd319c2a8400ffc671f7e689fee0dd1a7aba209871b2e2802c5d
+# - Nov-14-2020 12:48:29 AM +UTC
+reward_start: 11298292 # Nov-21-2020 12:48:27 AM +UTC
 reward_per_block: 0.78125
 batch_size: 200
 
